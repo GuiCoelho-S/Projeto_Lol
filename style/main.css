@@ -8,7 +8,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(0,0,0,.40);
+    background-color: rgba(0,0,0,.80);
     width:100%;
     height: 70px;
 }
@@ -47,9 +47,11 @@ body {
     margin:auto;
     flex-direction: column;
     max-width:900px;
-    height: 100vh;
+    padding-top:40px;
+    height: 1300px;
+    
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between
 
 }
 .container h1{
@@ -72,14 +74,66 @@ body {
     border-width: 1px;
     border-color:#E7C718;
 }
-.container_campeoes {
-    max-width: 400px;
+.glider {
+    word-break: break-all;
+}
+.glider img{
+    width:180px;
+    height: 180px;
+    border-radius: 100px;
+}
+.glider p{
+    color: white;
+    font-size: 12px;
+    font-family: arial;
+}
+.descricao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 230px;
+    height: auto;
+}
+/*Conteúdo do select, value==1*/
+
+.container_lanePhase {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    width:100%;
+    height: 800px;
     max-height: auto;
-    
 
 }
-.item img{
-    width: 80px;
-    height: 190px;
-    border-radius: 110px;  
+.lane_phase{
+    width: 50%;
+    height: 100%;
+    margin-top:100px;
+    border-right: solid;
+    border-color:#E7C718;
+    border-width: 1px;
+    padding: 12px 15px;
 }
+.lane_phase img{
+    height: 130px;
+    width: 400px;
+}
+
+.lane_phase p{
+    font-size: 15px;
+    font-family: arial;
+    color:white;
+    text-align: justify;
+    line-height: 24px;
+}
+.lane_phase h3{
+    font-size: 18px;
+    font-family: arial;
+    color: #E7C718;
+    text-align: justify;
+    margin-top: 10px;
+    line-height: 24px;
+    padding-bottom: 8px;
+}
+/*Conteúdo select value==2*/

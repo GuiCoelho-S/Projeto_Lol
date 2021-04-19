@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrossel</title>
-    <link rel="stylesheet" href="./style/main.css">
-    <link rel="stylesheet" href="style/owl/owl.carousel.css">
-    <link rel="stylesheet" href="style/owl/owl.theme.default.css">
+    <title>Como Sair do lowElo</title>
+    <link rel="stylesheet" href="glider/css/glider.css">
     <link rel="stylesheet" href="style/main.css">
+    
+    
 </head>
 <body> 
     <header class="cabecalho">
@@ -23,26 +23,87 @@
     <main class="container">
         <h1>Como não ser um low elo em League of Legends</h1>
         <article><p class="introducao">A temporada de classificação de 2021 está finalmente aqui depois de alguns meses brincando com os itens novos e brilhantes da pré-temporada. Quer você tenha ficado desapontado com a classificação da última temporada, queira subir mais alto do que nunca, ou se você for completamente novo no jogo, o grind de classificação começou. Então, se você quiser aumentar seu pool de campeões para ter certeza de que está pronto, aqui estão nossas melhores escolhas para ajudá-lo a escalar em cada função!</p></article>
-
-        <article class="container_campeoes">
-            <div class="carrosel_filmes">
-                <div class="owl-carousel owl-theme">
-                    <div class="item"><a href="#"><img src="img/camille.jpg"></a></div>
-                    <div class="item"><a href="#"><img src="img/shaco.jpg"></a></div>
-                    <div class="item"><a href="#"><img src="img/neeko.jpg"></a></div>
-                    <div class="item"><a href="#"><img src="img/kaisa.jpg"></a></div>
-                    <div class="item"><a href="#"><img src="img/velkoz.jpg"></a></div>
-                          
-                          
-                </div>
+<!-- Referente ao carrossel, utilizando o glider.js -->
+        <div class="glider-contain">
+            <div class="glider">
+              <div class="descricao">
+                  <a href="#"><img src="img/camille.jpg"></a>
+                  <p onmouseover="info1(this)">Veja mais informações</p>
+              </div>
+              <div class="descricao">
+                  <a href="#"><img src="img/shaco.jpg"></a>
+                  <p onmouseover="info2(this)">Veja mais informações</p>
+              </div>
+              <div class="descricao">
+                  <a href="#"><img src="img/neeko.jpg"></a>
+                  <p onmouseover="info3(this)">Veja mais informações</p>
+              </div>
+              <div class="descricao">
+                  <a href="#"><img src="img/kaisa.jpg"></a>
+                  <p onmouseover="info4(this)">Veja mais informações</p>
+              </div>
+              <div class="descricao">
+                  <a href="#"><img src="img/velkoz.jpg"></a>
+                  <p onmouseover="info5(this)">Veja mais informações</p>
+              </div>
+              
+              
             </div>
-        
-        </article>
-        
-    </main>
+          
+            <button aria-label="Previous" class="glider-prev">«</button>
+            <button aria-label="Next" class="glider-next">»</button>
+            <div role="tablist" class="dots"></div>
+          </div>
     
-    <script src="js/owl/jquery.min.js"></script>
-    <script src="js/owl/owl.carousel.min.js"></script>
-    <script src="js/owl/main.js"></script>
+    <select id="conteudos">
+        <option value="0"></option>
+        <option value="1"><p>Lane Phase e controle de have</p></option>
+        <option value="2"><p>Rotação de objetivos early/mid game</p></option>
+        <option value="3"><p>Rotação de objetivos late game</p></option>
+    </select>
+    <!--Conteúdo referente as informações do select-->
+    <article class="container_lanePhase">
+        <aside class="lane_phase"><p>Para explicar, usarei como base a top lane, diferenças entre as rotas:<br>
+            Top: maior necessidade de controle de wave (pois é a wave mais larga).<br>
+            Mid: maior necessidade de sintonia com o jungler, lane com maior nível de troca.<br>
+            Jungle: maior conhecimento em pathing para obtenção dos objetivos.<br>
+            Bot: maior necessidade de sinergia entre campeões adc's e suportes.
+            <br>
+            <br> 
+            Dito isso, podemos começar.
+            <h3>Conheça seu inimigo</h3>
+            <p>Campeões melee possui desvantagem no começo de jogo, caso esteja contra campeões ranged, procure não tomar muito poke, tente farmar os minions mais próximos e tente chamar o jungle para te ajudar, pois geralmente os jogadores de elos baixos não costumam freezar a wave, deixando-os sucetíveis a gank. Aproveite-se disso.<br> Caso você seja o campeão ranged, sempre puna o inimigo por farmar, não puxe a wave, isso fará com que o inimigo fique irritado e tente te matar numa tentativa de recuperar o controle do jogo.</p><h3>Rotação de objetivos</h3><p>Caso seu jungle deseje fazer o dragão por exemplo, é uma boa você puxar sua lane o mais rápido possível, assim você gera uma pressão no inimigo e te dar liberdade para acompanhar seu jg, seja com o feitiço tp(top-laner) ou apé mesmo (mid e bot-lane).<br><br><br><br></p>
+        </p></aside>
+        <aside class="lane_phase">
+            <h3>Controle de wave</h3>
+            <img src="img/controle_wave.jpg">
+            <p><br>Antes de tudo é preciso saber de uma coisa:<br>
+            <br>Minions magos: mais dano e menos vida<br>
+            Minions tank: mais vida menos dano<br></p>
+            <h3>Slow push</h3><p>Usado mais no meio do jogo, causará uma grande wave de minions gerando pressão na rota, para fazê-lo, é preciso que você mate os inimigos magos, deixando os tanks vivo.
+            <h3>Fast push</h3><p>Usado muito no mid, serve para causar pressão rápida na rota para que você possa rotacionar em torno de algum objetivo ou gank, para fazê-lo você deve esperar o inimigo dar recall, e matar os minions tanks</p>
+            <h3>Quando saber o que fazer?</h3><p>Pegamos como exemplo a top laner, em uma match-up riven x malphite<br>Malphite tomará pressão pois a riven é mais forte no early game, a partir disso ele tem duas possibilidades:<br>1. Se arriscar e tentar trocar, puxando a lane.<br>2. Esperar com que ela puxe e deixar os minions próximo a sua torre, para que ela freeze do seu lado é preciso que você deixe que a wave inimiga tenha 1 ou 2 minions a mais que você, possibilitando uma chance de gank do seu jg na rota.<br></p></p>
+        </aside>
+    </article >
+    
+    </main>
+
+    <script src="https://kit.fontawesome.com/14fcccf8c9.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/14fcccf8c9.js" crossorigin="anonymous"></script>
+    <script src="js/scriptmain.js"></script>
+    <script src="glider/js/glider.js"></script>
+    <script>
+        new Glider(document.querySelector('.glider'), {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        draggable: true,
+        dots: '.dots',
+        arrows: {
+          prev: '.glider-prev',
+          next: '.glider-next'
+        }
+      });
+    </script>
+
 </body>
 </html>
