@@ -3,6 +3,33 @@ body {
     background: url(../img/redeemed-bg.jpg);
 }
 
+/*Formatação dos textos*/
+p{
+    font-size: 15px;
+    font-family: arial;
+    color:white;
+    text-align: justify;
+    line-height: 24px;
+}
+ h3{
+    font-size: 18px;
+    font-family: arial;
+    color: #E7C718;
+    text-align: justify;
+    margin-top: 10px;
+    line-height: 24px;
+    padding-bottom: 8px;
+    
+}
+h2 {
+    font-size: 26px;
+    font-family: arial;
+    color: whitesmoke;
+    text-align: justify;
+    margin-top: 10px;
+    line-height: 24px;
+    
+}
 
 .cabecalho {
     display: flex;
@@ -48,10 +75,10 @@ body {
     flex-direction: column;
     max-width:900px;
     padding-top:40px;
-    height: 1300px;
+    height: 100%;
     
     align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
 
 }
 .container h1{
@@ -59,6 +86,7 @@ body {
     font-size:22px;
     color:#E7C718;
     align-self: center;
+    margin: 30px auto;
 }
     
 .introducao {
@@ -69,13 +97,10 @@ body {
     background-color:rgba(0,0,0,.30);
     padding:20px 10px;
 }    
-.introducao:hover{
-    border-style: solid;
-    border-width: 1px;
-    border-color:#E7C718;
-}
+
 .glider {
     word-break: break-all;
+    margin:20px auto;
 }
 .glider img{
     width:180px;
@@ -95,45 +120,126 @@ body {
     min-height: 230px;
     height: auto;
 }
+.seletor {
+    margin:25px auto;
+    width: 300px;
+    height: 40px;
+    background-color: rgba(0,0,0,.30);
+    color:white;
+    outline:none;
+    overflow:hidden;
+}
+.seletor:hover{
+    background-color: white;
+    color: black;
+}
+
+.seletor option{
+    background-color: #807C7C;
+    color:white;
+}
+
 /*Conteúdo do select, value==1*/
 
-.container_lanePhase {
+.container_info1 {
+    margin: 70px auto;
     display:flex;
     flex-direction: row;
     justify-content: center;
     width:100%;
-    height: 800px;
+    height: 850px;
     max-height: auto;
-
 }
 .lane_phase{
     width: 50%;
     height: 100%;
-    margin-top:100px;
+    max-height: auto;
+    margin-top:10px;
     border-right: solid;
     border-color:#E7C718;
     border-width: 1px;
     padding: 12px 15px;
 }
-.lane_phase img{
-    height: 130px;
-    width: 400px;
+.lane_phase2{
+    width: 50%;
+    height: 100%;
+    margin-top:10px;
+    padding: 12px 15px;
+    max-height: auto;
+}
+.lane_phase2 img{
+    height: 18%;
+    width: 100%;
 }
 
-.lane_phase p{
-    font-size: 15px;
-    font-family: arial;
-    color:white;
-    text-align: justify;
-    line-height: 24px;
-}
-.lane_phase h3{
-    font-size: 18px;
-    font-family: arial;
-    color: #E7C718;
-    text-align: justify;
-    margin-top: 10px;
-    line-height: 24px;
-    padding-bottom: 8px;
-}
 /*Conteúdo select value==2*/
+
+.container_info2 {
+    margin:240px auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width:100%;
+    height: 560px;
+    max-height: auto;
+
+}
+.rotacao {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 40px;
+    
+}
+
+.conteudo_rotacao {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    padding:6px;
+    height: 100%;
+    max-height: auto;
+    border-radius: 20px;
+    border-width: 1px;
+}
+/*Conteúdo relacionado ao select.value==3*/
+.container_info3 {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width:100%;
+    height: 100%;
+    max-height: auto;
+}
+.conteudo_comp {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    width: 90%;
+    padding:6px;
+    height: 100%;
+    border-radius: 20px;
+    border-width: 1px;
+}
+/*Estilizando o footer*/
+.container_footer {
+    display:flex;
+    margin-top:30px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height: 40px;
+    background-color: rgba(0,0,0,.40);
+}
+.container_footer a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bolder;
+}

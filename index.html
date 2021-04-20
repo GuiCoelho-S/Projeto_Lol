@@ -7,8 +7,6 @@
     <title>Como Sair do lowElo</title>
     <link rel="stylesheet" href="glider/css/glider.css">
     <link rel="stylesheet" href="style/main.css">
-    
-    
 </head>
 <body> 
     <header class="cabecalho">
@@ -16,9 +14,9 @@
         <a href="https://br.leagueoflegends.com/pt-br/how-to-play/" target="_blank">O jogo</a>
         <a href="https://br.leagueoflegends.com/pt-br/champions/" target="_blank">Campeões</a>
         <a href="https://br.leagueoflegends.com/pt-br/news/" target="_blank">Notícias</a>
-        <a href="https://br.leagueoflegends.com/pt-br/news/tags/patch-notes" target="_blank">Notas de atualização</a>
-        <a href="https://signup.br.leagueoflegends.com/pt/signup/index#/" target="_blank"><button type="button">Jogue agora</button></a>
+        <a href="https://br.leagueoflegends.com/pt-br/news/tags/patch-notes" target="_blank">Notas de atualização</a>       
         <a href="https://lolesports.com/" target="_blank"><img src="img/riot_games.png"></a>
+        <a href="https://signup.br.leagueoflegends.com/pt/signup/index#/" target="_blank"><button type="button">Jogue agora</button></a>
     </header>
     <main class="container">
         <h1>Como não ser um low elo em League of Legends</h1>
@@ -46,8 +44,6 @@
                   <a href="#"><img src="img/velkoz.jpg"></a>
                   <p onmouseover="info5(this)">Veja mais informações</p>
               </div>
-              
-              
             </div>
           
             <button aria-label="Previous" class="glider-prev">«</button>
@@ -55,14 +51,14 @@
             <div role="tablist" class="dots"></div>
           </div>
     
-    <select id="conteudos">
-        <option value="0"></option>
+    <select id="seletor" onchange="moverPagina()" onchange="restarSeletor()" class="seletor">
+        <option value="0">Selecione uma opção:</option>
         <option value="1"><p>Lane Phase e controle de have</p></option>
         <option value="2"><p>Rotação de objetivos early/mid game</p></option>
-        <option value="3"><p>Rotação de objetivos late game</p></option>
+        <option value="3"><p>Composições de equipe</p></option>
     </select>
     <!--Conteúdo referente as informações do select-->
-    <article class="container_lanePhase">
+    <article class="container_info1">
         <aside class="lane_phase"><p>Para explicar, usarei como base a top lane, diferenças entre as rotas:<br>
             Top: maior necessidade de controle de wave (pois é a wave mais larga).<br>
             Mid: maior necessidade de sintonia com o jungler, lane com maior nível de troca.<br>
@@ -72,26 +68,56 @@
             <br> 
             Dito isso, podemos começar.
             <h3>Conheça seu inimigo</h3>
-            <p>Campeões melee possui desvantagem no começo de jogo, caso esteja contra campeões ranged, procure não tomar muito poke, tente farmar os minions mais próximos e tente chamar o jungle para te ajudar, pois geralmente os jogadores de elos baixos não costumam freezar a wave, deixando-os sucetíveis a gank. Aproveite-se disso.<br> Caso você seja o campeão ranged, sempre puna o inimigo por farmar, não puxe a wave, isso fará com que o inimigo fique irritado e tente te matar numa tentativa de recuperar o controle do jogo.</p><h3>Rotação de objetivos</h3><p>Caso seu jungle deseje fazer o dragão por exemplo, é uma boa você puxar sua lane o mais rápido possível, assim você gera uma pressão no inimigo e te dar liberdade para acompanhar seu jg, seja com o feitiço tp(top-laner) ou apé mesmo (mid e bot-lane).<br><br><br><br></p>
+            <p>Campeões melee possui desvantagem no começo de jogo, caso esteja contra campeões ranged, procure não tomar muito poke, tente farmar os minions mais próximos e tente chamar o jungle para te ajudar, pois geralmente os jogadores de elos baixos não costumam freezar a wave, deixando-os sucetíveis a gank. Aproveite-se disso.<br> Caso você seja o campeão ranged, sempre puna o inimigo por farmar, não puxe a wave, isso fará com que o inimigo fique irritado e tente te matar numa tentativa de recuperar o controle do jogo.</p><h3>Rotação de objetivos</h3><p>Caso seu jungle deseje fazer o dragão por exemplo, é uma boa você puxar sua lane o mais rápido possível, assim você gera uma pressão no inimigo e te dar liberdade para acompanhar seu jg, seja com o feitiço tp(top-laner) ou apé mesmo (mid e bot-lane).<br></p>
         </p></aside>
-        <aside class="lane_phase">
-            <h3>Controle de wave</h3>
+        <aside class="lane_phase2">
+            <h3 id="controle_de_wave">Controle de wave</h3>
             <img src="img/controle_wave.jpg">
             <p><br>Antes de tudo é preciso saber de uma coisa:<br>
             <br>Minions magos: mais dano e menos vida<br>
             Minions tank: mais vida menos dano<br></p>
             <h3>Slow push</h3><p>Usado mais no meio do jogo, causará uma grande wave de minions gerando pressão na rota, para fazê-lo, é preciso que você mate os inimigos magos, deixando os tanks vivo.
             <h3>Fast push</h3><p>Usado muito no mid, serve para causar pressão rápida na rota para que você possa rotacionar em torno de algum objetivo ou gank, para fazê-lo você deve esperar o inimigo dar recall, e matar os minions tanks</p>
-            <h3>Quando saber o que fazer?</h3><p>Pegamos como exemplo a top laner, em uma match-up riven x malphite<br>Malphite tomará pressão pois a riven é mais forte no early game, a partir disso ele tem duas possibilidades:<br>1. Se arriscar e tentar trocar, puxando a lane.<br>2. Esperar com que ela puxe e deixar os minions próximo a sua torre, para que ela freeze do seu lado é preciso que você deixe que a wave inimiga tenha 1 ou 2 minions a mais que você, possibilitando uma chance de gank do seu jg na rota.<br></p></p>
+            <h3>Quando saber o que fazer?</h3><p>Pegamos como exemplo a top laner, em uma match-up riven x malphite<br>Malphite tomará pressão pois a riven é mais forte no early game, a partir disso ele tem duas possibilidades:<br>1. Se arriscar e tentar trocar, puxando a lane.<br>2. Esperar com que ela puxe e deixar os minions próximo a sua torre, para que ela freeze do seu lado é preciso que você deixe que a wave inimiga tenha 1 ou 2 minions a mais que você, possibilitando uma chance de gank do seu jg na rota.</p></p>
         </aside>
     </article >
-    
+
+    <article class="container_info2">
+        <h2 id="rotacao">Rotação de objetivos early game</h2>
+        <div class="rotacao">
+           
+           <aside class="conteudo_rotacao">
+               <h3>Top laner</h3><p><br>Por se tratar de uma lane que geralmente usa-se teleporte, o top possui grande importância no early game, devido o nascimento do dragão aos 5 min de jogo. É bom que ele tenha esse feitiço para ajudar o time em uma possível luta em torno do dragão.</p>
+           </aside>
+           <aside class="conteudo_rotacao"><h3>Mid laner</h3><p><br>Já o mid laner, ele possui uma boa liberdade com relação ao feitiço, caso o jungle queira fazer o drgão, convém o mid pressionar a wave para jogar debaixo da torre do inimigo, assim ele poderá ajudar o jungle ou gankar a bot lane afim de ter alguma vatagem, enquanto o inimigo vai estar preso na torre farmando.</p></aside>
+           <aside class="conteudo_rotacao"><h3>Bot lane</h3><p><br>A bot lane é a lane que define para o jungle quando será possível a rotação para o dragão, por se tratar de uma lane com 4 pessoas, fica mais dificil aplicar uma grande pressão de wave em pouco tempo, caso seu jungler deseje fazer o primeiro dragão, é bom que você comece a puxar a wave 2 minutos antes (tempo de 3 waves) para que na 4 wave ela fique jogada na torre inimiga e vocês tenham margem para sair e fazer o dragão.</p></aside>
+        </div>
+        <h2>Rotação de objetivos mid e late game</h2>
+        <div class="rotacao">
+            <aside class="conteudo_rotacao"><h3>Top laner</h3><p><br>No começo do jogo o foco principal é o dragão, já no mid game, o barão entra no meio das prioridades, geralmente o barão é feito quando você mata 3 ou mais inimigos na luta. Caso esteja no late game, já que você como top laner possui o TP, é interessante você ir no bot e puxar a lane, enquanto seu time puxa ou o top ou a mid lane, isso fará com que o inimigo tenha que defender a big wave no bot, deixando a luta 4x5 a favor de vocês, é interessante usar o slow push caso queira um controle melhor de push.</p></aside>
+            <aside class="conteudo_rotacao"><h3>Mid laner</h3><p><br>A função do mid no meio/late do jogo consiste em ficar junto com a equipe, pois junto com o adc, eles foram o dano na tf. O interessante de se fazer também é rotacionar na jungle inimiga junto com seu jg, afim de dar um pick-off em algum inimigo, isso fará com que vocês possuam uma boa liberdade para fazer objetivos, ou até mesmo uma tf.</p></aside>
+            <aside class="conteudo_rotacao"><h3>Jg e Bot lane</h3><p><br>Para o jg, é necessário ficar atento, pois os objetivos começam a fazer muita importância nas lutas,, principalmente se estiver perto de abater os 4 dragões, conseguindo a alma do dragão, a partir disso, o jg deverá rotacionar procurando dar um pick off junto com o mid ou sozinho, para abrir margem para fazer o Objetivo. Enquanto isso, a bot lane deve puxar uma lane, de preferência a do lado oposto do top laner, por exemplo: Se meu top laner está puxando bot, devo rotacionar top junto com o suporte, assim fará com que o inimigo tenha que se separar ou rotacionar todos para uma lane, nesse meio tempo cria um gap para que seu mid e jungle consiga um pick-off. 
+            </p></aside>
+         </div>
+    </article>
+    <article class="container_info3">
+        <h2 id="comp">Tipos de composições</h2>
+        <aside class="conteudo_comp">
+            <h3>Composição poke</h3><p>Composições do tipo poke, tem como objetivo principal o uso de skills para pokear o inimigo, ou seja, dar dano a longa distância. Campeões poke quando conseguem dar dano antes da luta, dão vantagem para a equipe. Porém não é bom fazer uma composição totalmente com campeões de estilo poke, pois eles possuem menos eficiência a combates de corpo a corpo, certifique-se disso.<h3>Composição de engage</h3><p>Composições de engage possui uma boa iniciação, como por exemplo, malphite, já que consegue se aproximar com rapidez. Em uma composição procure alguém para fazer esse trabalho, iniciar rapidamente pode ser a chave para vencer a luta.</p><h3>Dive</h3><p>Dificilmente você verá uma composição inteiramente focada para dive, porém estas se caracterizam por ter um grande número de controle de grupo(CC) e um bom engage em alvo único. Ótima para conseguir vangem no early/mid game, decai um pouco no late.</p><h3>Split-push</h3><p>Como o nome sugere, composições do tipo split-push tem uma grande pressão em empurrar a rota, geralmente são campeões que não rotacionam muito e pressiona o inimigo a ficar junto dele. Não é viável ter mais que dois personagens tipo split na equipe, pois eles geralmente possuem baixa participação em lutas em equipe.</p><h3>Composição Wombo Combo</h3><p>São composições difíceis de serem realizadas, pois é necessário que o time tenha uma boa sinergia além de conhecimento das características dos campeões, possuem geralmente um hard engage e finalizam a luta com rapidez, ótima composição para lutas. Um exemplo de comp wombo combo:<br><br>Malphite (top)<br>Yasuo (mid)<br>Gragas (jungle)<br>Miss Fortune (adc)<br>Galio (suporte)<br><br></p><h3>Protect the carry</h3><p>Composição feita para girar em torno do carry, geralmente é arriscada pois o dano central é todo focado no Adc, caso ele morra há uma grande chance de perder a luta ou até mesmo o jogo. Composições assim geralmente possuem suportes que curam e dão escudos aos adc's, enquanto o jungle e top ficam na front-line da luta, o mid geralmente fica na back line junto com o suporte e o adc.</p></p>
+        </aside>
+    </article>
     </main>
+    <footer class="container_footer">
+        <a href="https://github.com/GuiCoelho-S" target="_blank"><p>Desenvolvido por Gui Coelho</p></a>
+
+</footer>
 
     <script src="https://kit.fontawesome.com/14fcccf8c9.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/14fcccf8c9.js" crossorigin="anonymous"></script>
     <script src="js/scriptmain.js"></script>
     <script src="glider/js/glider.js"></script>
+
+    <!--Função do carrossel, para saber mais acesse: https://nickpiscitelli.github.io/Glider.js/-->
     <script>
         new Glider(document.querySelector('.glider'), {
         slidesToShow: 2,
@@ -104,6 +130,5 @@
         }
       });
     </script>
-
 </body>
 </html>

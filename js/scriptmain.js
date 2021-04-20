@@ -17,4 +17,27 @@ function info4(elemento){
 function info5(elemento){
     elemento.innerHTML = "<p>Sup/Mid dano explosivo</p>";
 }
+// Movimento da página quando usar o select
+
+function moverPagina(){
+    document.getElementById("seletor");
+
+    if (seletor.value ==1){
+        document.getElementById("controle_de_wave").scrollIntoView({
+            behavior: "smooth",
+        });
+    }
+    if (seletor.value ==2){
+        document.getElementById("rotacao").scrollIntoView({
+            behavior: "smooth",
+        });
+    }
+    if (seletor.value ==3){
+        document.getElementById("comp").scrollIntoView({
+            behavior: "smooth",
+        });
+    }
+    
+    return seletor.selectedIndex = 0;
+}
 
