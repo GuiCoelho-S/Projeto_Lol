@@ -34,9 +34,15 @@ h2 {
 .cabecalho {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     background-color: rgba(0,0,0,.80);
     width:100%;
+    height: 70px;
+}
+.cabecalho_conteudo{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width:50%;
     height: 70px;
 }
 /*Estilizando o cabeçalho*/
@@ -101,6 +107,7 @@ h2 {
 .glider {
     word-break: break-all;
     margin:20px auto;
+    width:100%;
 }
 .glider img{
     width:180px;

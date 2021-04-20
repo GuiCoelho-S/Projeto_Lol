@@ -1,0 +1,155 @@
+@media screen and (max-width:860px){
+    .cabecalho {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        width: auto;
+    }
+    .cabecalho_conteudo {
+        width:100%;
+    }
+    .introducao {
+        font-size:15px;
+    }
+
+    .glider-contain {
+        width:80%;
+        height: 280px;
+    }
+    .container{
+        margin:0 auto;
+        width:100%;
+        height: auto;
+
+    }
+    .seletor {
+        height: 60px;
+        padding-left:60px;
+    }
+    .container_info1 {
+        display:flex;
+        flex-direction: column;
+        width:95%;
+        margin: 300px auto;
+        align-items: center;
+    }
+    .lane_phase{
+        text-align: justify;
+        width:100%;
+    }
+    .lane_phase2{
+        text-align: justify;
+        width:100%;
+    }
+    .lane_phase2 img{
+        height: 250px;
+        width:100%;
+        
+    }
+    .container_info2 {
+        display:flex;
+        flex-direction: column;
+        width:95%;
+        margin: 440px auto;
+        align-items: center;
+    }
+    .rotacao {
+        display:flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .conteudo_rotacao {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .container_info3{
+        margin: 0 auto;
+        height: auto;
+    }
+    .container_footer{
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:600px){
+    .container h1{
+        font-size:14px;
+        text-align: center;
+    }
+    .introducao {
+        font-size: 11px;
+        text-align: justify;
+    }
+    .cabecalho a{
+        font-size: 12px;
+    }
+    .cabecalho button{
+        width:80px;
+        padding:0;
+        height: 30px;
+    }
+    p{
+        font-size: 12px;
+    }
+    .glider-contain {
+        width:90%;
+        height: 240px;
+    }
+    .glider-contain img{
+        width:100px;
+        height: 100px;
+    }
+    .seletor {
+        margin:70px auto;
+        width: 80%;
+        height: 80%;
+    }
+    .container {
+        width:100%;
+        height: auto;
+    }
+    .container_info1{
+        margin: 500px auto;
+    }
+    .lane_phase {
+        height: 100%;
+    }
+    .lane_phase2{
+        text-align: justify;
+        width:100%;
+    }
+    .lane_phase2 img{
+        height: 180px;
+        width:100%;
+        
+    }
+    .container_info2 {
+        display:flex;
+        flex-direction: column;
+        width:95%;
+        margin: 440px auto;
+        align-items: center;
+    }
+    .rotacao {
+        margin: 100px auto;
+        display:flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .conteudo_rotacao {
+        margin: 0 auto;
+        width: 100%;
+    }
+    h2{
+        font-size: 15px;
+    }
+    .container_info3{
+        margin: 600px auto;
+        height: auto;
+    }
+    .container_footer{
+        margin: 0 auto;
+    }
+    
+}
