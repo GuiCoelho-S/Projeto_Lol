@@ -3,7 +3,7 @@
 
 <h3 align="center">Status do projeto: concluído ✅</h3><p><br></p>
 
-### Link de acesso: <a href="https://github.com/GuiCoelho-S/Projeto_Lol">https://github.com/GuiCoelho-S/Projeto_Lol</a>
+
 <p><br></p>
 
 ## Objetivo do projeto:
